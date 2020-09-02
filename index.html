@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <title>MasterMind</title>
+    <meta charset="UTF-8"/>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" title="Style" />
+  </head>
+  <body onload="genereCombinaison();">
+    <input id="combi1" type="hidden" value="0">
+    <input id="combi2" type="hidden" value="0">
+    <input id="combi3" type="hidden" value="0">
+    <input id="combi4" type="hidden" value="0">
+    <section class="pres">
+      <h1>Bienvenue sur le meilleur jeu MasterMind en JavaScript</h1>
+      <p>Entrez 1 couleur dans chaque case</p>
+    </section>
+    <div class="select">
+      <input type="button" class="bleu" onclick="ajoutCouleur(0);" value="0">
+      <input type="button" class="jaune" onclick="ajoutCouleur(1);" value="0">
+      <input type="button" class="vert" onclick="ajoutCouleur(2);" value="0">
+      <input type="button" class="rouge" onclick="ajoutCouleur(3);" value="0">
+      <input type="button" class="orange" onclick="ajoutCouleur(4);" value="0">
+      <input type="button" class="marron" onclick="ajoutCouleur(5);" value="0">
+    </div>
+    <br/>
+    <input id="submit" type="button" value="Tester la combinaison" onclick="testCombinaison();">
+    <input id="retry" type="button" value="Réinitialiser la combinaison actuelle" onclick="supprCombinaison();">
+    <br/><br/><br/>
+    <div id="compteRendu"></div><br/>
+		<div id="propositions"></div><br/>
+    <footer>
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px"
+          src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+          alt="CSS Valide !" />
+      </a>
+    </p>
+          </footer>
+  </body>
+</html>

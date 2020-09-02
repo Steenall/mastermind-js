@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Ubuntu web";
+  src: local("Ubuntu"),
+  url(Ubuntu-R.ttf);
+}
+.blanc{
+  color: white;
+  background-color: white;
+  border-color: white;
+}
+.noir{
+  background-color: black;
+  border-color: white;
+}
+.bleu {
+  color: cyan;
+  background-color: cyan;
+  border-color: cyan;
+}
+.vert {
+  color : green;
+  background-color: green;
+  border-color: green;
+}
+.jaune {
+  color : yellow;
+  background-color: yellow;
+  border-color: yellow;
+}
+.rouge {
+  color : red;
+  background-color: red;
+  border-color: red;
+}
+.orange {
+  color : orange;
+  background-color: orange;
+  border-color: orange;
+}
+.marron {
+  color : brown;
+  background-color: brown;
+  border-color: brown;
+}
+body {
+  background-color: #0a3d62;
+  font-family: "Ubuntu web";
+}
+.pres{
+  color: white;
+}

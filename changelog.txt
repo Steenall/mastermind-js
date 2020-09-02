@@ -1,0 +1,14 @@
+Version 2 (fin le 04/04/2020) :
+Correction d'un bug quand un joueur essaye une combinaison avec plusieurs fois la même couleur (doit affiché une bille noire)
+Amélioration de l'interface
+Transformation des boutons qui servent à ajouter des couleurs en image
+Intégration du logo de w3c qui indique la validité du css en local
+Ajout de l'attribution (copyright) des différentes images
+Amélioration des boutons (bien plus esthétiques et possède des animations en cas de changement d'état)
+Chaque objet de la page est centré
+
+Version 1 (fin le 02/04/2020) :
+Création du corp de la page HTML
+Ajout d'un fichier css pour donnéer de la couleur aux boutons et résultats, modifier le fond ainsi que modifier la police de la page web (utilisation de la police Ubuntu)
+Ajout de l'icone css validator fourni par le w3c
+Code Javascript fonctionnel (fonctionne avec des InnerHTML)

@@ -3,19 +3,24 @@
   src: local("Ubuntu"),
   url(Ubuntu-R.ttf);
 }
+.equilibre{
+  width: 23px;
+  height: 23px;
+}
+.prop{
+  border-radius: 50%;
+  border-color: black;
+  border-width: medium;
+}
 img {
   width: 50px;
   height: 50px;
   transition-duration: 0.4s;
-  padding-right: 20px;
+  margin-right: 20px;
   cursor: pointer;
 }
 img:hover{
   opacity: 50%;
-}
-img:onclick{
-  background-color: white;
-  opacity:30%;
 }
 img.vcss{
   padding-bottom: 10px;
@@ -23,12 +28,9 @@ img.vcss{
 img.vcss:hover{
   opacity: 50%;
 }
-img.vcss:onclick{
-  background-color: white;
-  opacity:30%;
-}
 a{
   color: LightSteelBlue;
+  transition-duration: 0.2s;
 }
 a:visited{
   color : LightSteelBlue;
@@ -46,18 +48,97 @@ body {
   font-family: "Ubuntu web";
   text-align: center;
   color: white;
+  text-decoration-color: white;
 }
-.pres{
+.list{
+  background-color: black;
+  border: none;
   color: white;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 2px solid #555555;
+  transition-duration: 0.4s;
+  border-radius: 12px;
+  margin-left: 20px;
+}
+.list:hover{
+  background-color: white;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .button {
   background-color: black;
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 2px solid #444444;
+  border-radius: 12px;
+  margin-left: 20px;
+}
+.button:hover {
+  background-color: #ffffff;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.invisible{
+  cursor: default;
+}
+.invisible:hover{
+}
+.button:disabled{
+  background-color: grey;
+  border: 2px solid #555555;
+}
+.button:disabled:hover{
+  background-color: grey;
+  border: 2px solid #555555;
+  box-shadow: none;
+  color: white;
+  cursor: default;
+}
+.prop{
+  cursor: default;
+}
+.prop:hover{
+  opacity: 100%;
+}
+.res{
+  cursor: default;
+}
+.res:hover{
+  opacity: 100%;
+}
+#jeu{
+  background-image: url("plateau.png");
+  background-repeat: repeat-y;
+  background-position: center;
+  background-position: top;
+  padding-left: 23px;
+  padding-top: 11px;
+  border-radius: 5px;
+  border-color: black;
+}
+.select:active{
+    opacity: 100%;
+}
+
+.minibutton {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 8px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -65,63 +146,26 @@ body {
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
-  border: 2px solid #000000;
-  border-radius: 12px;
+  border: 2px solid #555555;
+  border-radius: 6px;
+  margin-left: 10px;
 }
-.button:hover {
+.minibutton:hover {
   background-color: #ffffff;
   color: black;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-.button:onclick{
-  background-color: #68768A;
-}
-.invisible{
-  opacity: 0%;
-  cursor: default;
-  z-index: 2;
-}
-.invisible:hover{
-  opacity: 0%;
-}
-.invisible:onclick{
-  background-color: white;
-  opacity:30%;
-}
-
-.button:disabled{
+.minibutton:disabled{
   background-color: grey;
   border: 2px solid grey;
 }
-.button:disabled:hover{
+.minibutton:disabled:hover{
   background-color: grey;
   border: 2px solid grey;
-  box-shadow: 0 0px 0px 0 rgba(0,0,0,0.24), 0 0px 0px 0 rgba(0,0,0,0.19);
+  box-shadow: none;
   color: white;
   cursor: default;
 }
-.button:disabled:onclick{
-  background-color: grey;
-  border: 2px solid grey;
-  box-shadow: 0;
-}
-.prop{
-  cursor: default;
-  z-index: 2;
-}
-.prop:hover{
-  opacity: 100%;
-}
-.prop:onclick{
-  opacity: 100%;
-}
-.res{
-  cursor: default;
-  z-index: 2;
-}
-.res:hover{
-  opacity: 100%;
-}
-.res:onclick{
-  opacity: 100%;
+.setting {
+  color:white;
 }

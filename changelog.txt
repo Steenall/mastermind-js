@@ -1,10 +1,18 @@
+Version 3 (en cours de développement)
+Intégration d'un plateau de jeu
+Ajout du drag and drop en plus du click
+Ajout des règles
+Ajout des paramètres avec une modification du nombre de tentatives, modification de la couleur de fond, du texte ainsi qu'un paramètre de débogage qui affiche la combinaison de l'ordinateur)
+Correction d'un bug qui faisait descendre le bas de page
+Correction de nombreux bugs sur le résultat d'une combinaison (si on met plusieurs fois une même couleur, on obtient un pion noir et des pions blancs alors que normalement, il ne devrait y avoir qu'un seul pion noir)
+
 Version 2 (fin le 04/04/2020) :
 Correction d'un bug quand un joueur essaye une combinaison avec plusieurs fois la même couleur (doit affiché une bille noire)
 Amélioration de l'interface
 Transformation des boutons qui servent à ajouter des couleurs en image
 Intégration du logo de w3c qui indique la validité du css en local
 Ajout de l'attribution (copyright) des différentes images
-Amélioration des boutons (bien plus esthétiques et possède des animations en cas de changement d'état)
+Amélioration des boutons (bien plus esthétiques et possède des animations en cas de changement d'état [au survol ou quand le joueur ne peut pas cliqué dessus])
 Chaque objet de la page est centré
 
 Version 1 (fin le 02/04/2020) :

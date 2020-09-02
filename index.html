@@ -6,32 +6,33 @@
     <script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" title="Style" />
   </head>
-  <body onload="genereCombinaison();">
+  <body id="body" onload="genereCombinaison();">
     <input id="combi1" type="hidden" value="0">
     <input id="combi2" type="hidden" value="0">
     <input id="combi3" type="hidden" value="0">
     <input id="combi4" type="hidden" value="0">
-    <section class="pres">
-      <h1>Bienvenue sur le meilleur jeu MasterMind en JavaScript</h1>
-      <p>Entrez 1 couleur dans chaque case</p>
-    </section>
-    <div class="select">
-      <img src="Button_Icon_Blue.svg" alt="bleu" onclick="clickCouleur(0);" value="0">
-      <img src="Button_Icon_Yellow.svg" alt="jaune" onclick="clickCouleur(1);" value="0">
-      <img src="Button_Icon_Green.svg" alt="vert" onclick="clickCouleur(2);" value="0">
-      <img src="Redbutton.svg" alt="rouge" onclick="clickCouleur(3);" value="0">
-      <img src="Button_Icon_Purple.svg" alt="violet" onclick="clickCouleur(4);" value="0">
-      <img src="Button_Icon_Brown.svg" alt="marron" onclick="clickCouleur(5);" value="0">
+    <div class="listeSelect">
+      <img class="select" src="Button_Icon_Blue.svg" onclick="clickCouleur(0);" ondrag="dragCouleur(0)" ondragend="endDrag()" draggable="true" alt="bleu">
+      <img class="select" src="Button_Icon_Yellow.svg" alt="jaune" onclick="clickCouleur(1);" ondrag="dragCouleur(1)" ondragend="endDrag()" draggable="true">
+      <img class="select" src="Button_Icon_Green.svg" alt="vert" onclick="clickCouleur(2);" ondrag="dragCouleur(2)" ondragend="endDrag()" draggable="true">
+      <img class="select" src="Redbutton.svg" alt="rouge" onclick="clickCouleur(3);" ondrag="dragCouleur(3)" ondragend="endDrag()" draggable="true">
+      <img class="select" src="Button_Icon_Purple.svg" alt="violet" onclick="clickCouleur(4);" ondrag="dragCouleur(4)" ondragend="endDrag()" draggable="true">
+      <img class="select" src="Button_Icon_Brown.svg" alt="marron" onclick="clickCouleur(5);" ondrag="dragCouleur(5)" ondragend="endDrag()" draggable="true">
     </div>
     <br/>
-    <input id="submit" type="button" class="button" disabled="true" value="Tester la combinaison" onclick="testCombinaison();">
-    <input id="retry" type="button" class="button" disabled="true" value="Réinitialiser la combinaison actuelle" onclick="supprCombinaison();">
-    <br/><br/><br/>
-    <div id="rectangle">
+    <input id="submit" type="button" class="button" disabled value="Tester la combinaison" onclick="testCombinaison();">
+    <input id="retry" type="button" class="button" disabled value="Réinitialiser la combinaison actuelle" onclick="supprCombinaison();">
+    <input id="regle" type="button" class="button" value="Afficher les paramètres" onclick="afficheRegle();">
+    <br/>
+    <div id="rules"></div>
+    <br/><br/>
+    <div id="soluce"></div>
+    <div id="jeu">
       <div id="compteRendu"></div>
-		  <div id="propositions"></div><br/><br/>
-    </div>
-    <footer>
+		  <div id="propositions"></div>
+      <div id="void"></div>
+    </div><br/><br/>
+    <footer id="footer" hidden>
       <a href="https://jigsaw.w3.org/css-validator/">
         <img class="vcss" style="border:0;width:88px;height:31px" src="vcss.gif" alt="CSS Valide !" />
       </a>
